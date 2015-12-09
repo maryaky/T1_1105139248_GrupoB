@@ -1,0 +1,103 @@
+\documentclass[11pt]{report}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{Sweave}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{anysize} 
+\marginsize{1.78cm}{1.65cm}{1.78cm}{1.78cm} 
+
+\title{\Huge Universidad Nacional de Loja \\ 
+Área de la Energía las Industrias y los Recursos Naturales no Renovables \\
+Marjorie Cuenca \\}
+
+
+
+\begin{document}
+\input{L-2_1105139248-concordance}
+\maketitle
+
+\begin{center}\textbf{TITANIC DATASET}\end{center}
+\textbf{Descripción}
+
+1. Es aplicable la ingeniería de software cuando se elaboran webapps? Si es así, ¿cómo puede modificarse para que asimile las características únicas de éstas?\\ 
+
+
+
+2. Un breve descripción del dataset Titanic \\ 
+
+Los datos que se encuentar en la dataset TITANIC son datos reales que coresponde a los pasajeros que abordaron el barco TITANIC la cual tiene las siguientes clases.
+
+Hubieron 4 clases de Pasajeros, los mismos que se los distribuyeron de la siguiente manera. 1st Clase comprendian los mas adinerados, quienes tenian inmensas extensiones de tierra. En la 2da, iban los de la clase media, quienes poseian algunas propiedades, pequeñas pero propias. En la 3rd iba el proletariado, la clase baja, quienes no poseian riqueza alguna. En la clase Crew,  pertenecia la tripulacion, el capitan del barco y todo el personal de servicio. 
+
+Tambien se detalle todos los que sobrevivieron entres niños, hombres y mujeres 
+
+
+\begin{Schunk}
+\begin{Soutput}
+[1] "Mostrar el dataset"
+\end{Soutput}
+\begin{Soutput}
+    X Class    Sex   Age Survived Freq
+1   1   1st   Male Child       No    0
+2   2   2nd   Male Child       No    0
+3   3   3rd   Male Child       No   35
+4   4  Crew   Male Child       No    0
+5   5   1st Female Child       No    0
+6   6   2nd Female Child       No    0
+7   7   3rd Female Child       No   17
+8   8  Crew Female Child       No    0
+9   9   1st   Male Adult       No  118
+10 10   2nd   Male Adult       No  154
+11 11   3rd   Male Adult       No  387
+12 12  Crew   Male Adult       No  670
+13 13   1st Female Adult       No    4
+14 14   2nd Female Adult       No   13
+15 15   3rd Female Adult       No   89
+16 16  Crew Female Adult       No    3
+17 17   1st   Male Child      Yes    5
+18 18   2nd   Male Child      Yes   11
+19 19   3rd   Male Child      Yes   13
+20 20  Crew   Male Child      Yes    0
+21 21   1st Female Child      Yes    1
+22 22   2nd Female Child      Yes   13
+23 23   3rd Female Child      Yes   14
+24 24  Crew Female Child      Yes    0
+25 25   1st   Male Adult      Yes   57
+26 26   2nd   Male Adult      Yes   14
+27 27   3rd   Male Adult      Yes   75
+28 28  Crew   Male Adult      Yes  192
+29 29   1st Female Adult      Yes  140
+30 30   2nd Female Adult      Yes   80
+31 31   3rd Female Adult      Yes   76
+32 32  Crew Female Adult      Yes   20
+\end{Soutput}
+\begin{Soutput}
+       X          Class       Sex       Age    Survived      Freq      
+ Min.   :17.00   1st :1   Female:0   Adult:0   No :0    Min.   : 0.00  
+ 1st Qu.:17.75   2nd :1   Male  :4   Child:4   Yes:4    1st Qu.: 3.75  
+ Median :18.50   3rd :1                                 Median : 8.00  
+ Mean   :18.50   Crew:1                                 Mean   : 7.25  
+ 3rd Qu.:19.25                                          3rd Qu.:11.50  
+ Max.   :20.00                                          Max.   :13.00  
+\end{Soutput}
+\begin{Soutput}
+    X Class  Sex   Age Survived Freq
+17 17   1st Male Child      Yes    5
+18 18   2nd Male Child      Yes   11
+19 19   3rd Male Child      Yes   13
+20 20  Crew Male Child      Yes    0
+\end{Soutput}
+\end{Schunk}
+
+\begin{Schunk}
+\begin{Soutput}
+[1] "¿Cuál es el número total de casos en el dataset?"
+\end{Soutput}
+\end{Schunk}
+
+
+
+
+
+\end{document}

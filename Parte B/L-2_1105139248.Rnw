@@ -1,0 +1,55 @@
+\documentclass[11pt]{report}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{Sweave}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{anysize} 
+\marginsize{1.78cm}{1.65cm}{1.78cm}{1.78cm} 
+
+\title{\Huge Universidad Nacional de Loja \\ 
+Área de la Energía las Industrias y los Recursos Naturales no Renovables \\
+Marjorie Cuenca \\}
+
+
+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+\maketitle
+
+\begin{center}\textbf{TITANIC DATASET}\end{center}
+\textbf{Descripción}
+
+1. Es aplicable la ingeniería de software cuando se elaboran webapps? Si es así, ¿cómo puede modificarse para que asimile las características únicas de éstas?\\ 
+
+
+
+2. Un breve descripción del dataset Titanic \\ 
+
+Los datos que se encuentar en la dataset TITANIC son datos reales que coresponde a los pasajeros que abordaron el barco TITANIC la cual tiene las siguientes clases.
+
+Hubieron 4 clases de Pasajeros, los mismos que se los distribuyeron de la siguiente manera. 1st Clase comprendian los mas adinerados, quienes tenian inmensas extensiones de tierra. En la 2da, iban los de la clase media, quienes poseian algunas propiedades, pequeñas pero propias. En la 3rd iba el proletariado, la clase baja, quienes no poseian riqueza alguna. En la clase Crew,  pertenecia la tripulacion, el capitan del barco y todo el personal de servicio. 
+
+Tambien se detalle todos los que sobrevivieron entres niños, hombres y mujeres 
+
+
+<<results=verbatim, echo=False>>=
+print("Mostrar el dataset")
+titanic<-read.csv("/home/marjorie/Descargas/Titanic.csv", sep = ",")
+print(titanic)
+a<-subset(titanic, titanic$Sex=="Male"& titanic$Age=="Child" & titanic$Survived=="Yes" )
+summary(a)
+print(a)
+@
+
+<<results=verbatim, echo=False>>=
+print("¿Cuál es el número total de casos en el dataset?")
+
+
+@
+
+
+
+
+
+\end{document}
